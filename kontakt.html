@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="Go to top">hoch</button>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="hero kontakt-hero">
+        <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+        <div class="verlauf">&nbsp;</div>
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Kontaktdaten -->
+    <section id="kontakt">
+        <div class="container text-center mt-5">
+            <h1 class="headline ks-blau mb-5">Kontakt/Impressum</h1>
+            <h2 class="subheadline ks-blau mb-4">Seminarhaus Kloster Schwarzenfels</h2>
+            <p><span class="fw-semibold">Tel: </span><a href="tel:0751123450">0751-123450</a><br>
+                <span class="fw-semibold">Fax: </span>0751-123459
+            </p>
+            <p><a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a><br>
+                <a href="index.html">www.auszeit-in-schwarzenfels.de</a><br>
+            </p>
+            <p>Geschäftsführung: <span class="fw-semibold">Mechthild Mager</span></p>
+            <p>Abteistraße<br>
+                88214 Ravensburg</p>
+            <p><span class="fw-semibold">Amtsgericht Ravensburg, Handelsregister</span><br>
+                Nr. XXX111XXX</p>
+            <p><span class="fw-semibold">Finanzamt Ravensburg USt.ID:</span><br>
+                DE220111011</p>
+        </div>
+    </section>
+
+    <!-- Footerbereich -->
+    <div class="wald">
+        <img class="img-fluid mt-5" src="img/wald.png"
+            alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+    </div>
+    <footer class="text-center">
+        <div class="container text-light">
+            <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+            <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                Fax: 0751-123459<br>
+                <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+            </p>
+            <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                <a href="#">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="Go to top">hoch</button>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="hero angebot-hero">
+        <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+        <div class="verlauf">&nbsp;</div>
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+                
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Gesundheit -->
+    <section id="gesundheit">
+        <div class="container">
+            <div class="headline-box text-center">
+                <h1 class="angebot_h1 ks-braun">Angebot</h1>
+                <h2 class="angebot_h2 ks-rotbraun">Gesundheit</h2>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <img src="img/hatha_yoga.jpg" class="full-width mb-5 img-fluid"
+                        alt="7 jüngere Menschen beider Geschlechter sitzen im Schneidersitz auf Yogamatten. Ihre Arme sind über den Kopf nach oben gestreckt und ihre Hände
+                         liegen aneinander.">
+                    <h3 class="angebot_h3 ks-rotbraun mb-3">Hatha-Yoga</h3>
+                    <p>Keine Vorkenntnisse notwendig, nur Neugierde und Achtsamkeit sind gefragt. Als
+                        Präventionsseminar von einigen Krankenkassen gefördert.</p>
+                    <div class="angebot-box mt-5">
+                        <img src="icons/kalender_rotbraun.png" class="img-fluid mb-3" alt="Schlichte Grafik eines Kalenders">
+                        <p>Freitag, <span class="fw-semibold">4. Februar</span><br>
+                            bis Sonntag, <span class="fw-semibold">6. Februar 2022</span></p>
+                        <p>Freitag, <span class="fw-semibold">3. Juni</span><br>
+                            bis Sonntag, <span class="fw-semibold">5. Juni 2022</span></p>
+                    </div>
+                    <div class="angebot-box">
+                        <img src="icons/kursleiter_rotbraun.png" class="img-fluid mb-3" alt="Icon einer Person">
+                        <p><span class="fw-semibold">Kursleiterin: Annegret Schippke</span><br>
+                            <a href="mailto:annegret-schippke@yahoo.de">annegret-schippke@yahoo.de</a>
+                        </p>
+                    </div>
+                    <div class="angebot-box mb-5">
+                        <img src="icons/preis_rotbraun.png" class="img-fluid mb-3" alt="Icon des Euro Symbols">
+                        <p>Kursgebühr <span class="fw-semibold">EUR 85,–</span><br>
+                        Vollpension <span class="fw-semibold">EUR 120,–</span></p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a class="btn btn-primary btn-lg mt-5 mobil" href="anmeldung.html">Anmeldung</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/koerperarbeit.jpg" class="full-width mb-5 img-fluid abstand" alt="Seitenansicht einer Person im Schneidersitz ">
+                    <h3 class="angebot_h3 ks-rotbraun mb-3">Körperarbeit</h3>
+                    <p>Lassen Sie sich ganz entspannt auf verschiedene
+                        Techniken wie Feldenkrais und Achtsamkeitsbasierte
+                        Stressreduktion (MBSR) ein.</p>
+                    <div class="angebot-box mt-5">
+                        <img src="icons/kalender_rotbraun.png" class="img-fluid mb-3" alt="Icon eines Kalenders">
+                        <p>Freitag, <span class="fw-semibold">11. Februar</span><br>
+                            bis Sonntag, <span class="fw-semibold">13. Februar 2022</span></p>
+                        <p>Freitag, <span class="fw-semibold">6. Mai</span><br>
+                            bis Sonntag, <span class="fw-semibold">8. Mai 2022</span></p>
+                    </div>
+                    <div class="angebot-box">
+                        <img src="icons/kursleiter_rotbraun.png" class="img-fluid mb-3" alt="Icon einer Person">
+                        <p><span class="fw-semibold">Kursleiter: Steffen Nagel</span><br>
+                            <a href="mailto:info@kursnagel.de">info@kursnagel.de</a>
+                        </p>
+                    </div>
+                    <div class="angebot-box mb-5">
+                        <img src="icons/preis_rotbraun.png" class="img-fluid mb-3" alt="Icon des Euro Symbols">
+                        <p>Kursgebühr <span class="fw-semibold">EUR 95,–</span><br>
+                        Vollpension <span class="fw-semibold">EUR 120,–</span></p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a class="btn btn-primary btn-lg mt-5 mb-5 mobil" href="anmeldung.html">Anmeldung</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-5">
+                <a class="btn btn-primary btn-lg mt-5 mb-5 tablet" href="anmeldung.html">Anmeldung</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kreativität -->
+    <section id="kreativ">
+        <div class="container">
+            <div class="headline-box text-center">
+                <h2 class="ks-rotbraun angebot_h2">Angebot<br>
+                    <span class="ks-kastanie">Kreativität</span>
+                </h2>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <img src="img/zeichnen.jpg" class="full-width mb-5 img-fluid" alt="Eine Hand, die einen Pinsel hält und Blätter mit Aquarellfarben malt">
+                    <h3 class="angebot_h3 ks-kastanie mb-3">Zeichnen und Malen</h3>
+                    <p>Wir halten Eindrücke aus der Umgebung als Zeichnungen oder Aquarelle fest. Ich begleite Sie auf
+                        dem Weg ganz individuell. Ob Einsteiger/-innen oder Fortgeschrittene – für jeden ist etwas
+                        dabei.</p>
+                    <div class="angebot-box mt-5">
+                        <img src="icons/kalender_rotbraun.png" class="img-fluid mb-3" alt="Icon eines Kalenders">
+                        <p>Samstag, <span class="fw-semibold">23. April</span><br>
+                            bis Sonntag, <span class="fw-semibold">24. April 2022</span></p>
+                        <p>Samstag, <span class="fw-semibold">21. Mai</span><br>
+                            bis Sonntag, <span class="fw-semibold">22. Mai 2022</span></p>
+                    </div>
+                    <div class="angebot-box">
+                        <img src="icons/kursleiter_rotbraun.png" class="img-fluid mb-3" alt="Icon einer Person">
+                        <p><span class="fw-semibold">Kursleiterin: Hanne Harch</span><br>
+                            <a href="mailto:haha@t-online.de">haha@t-online.de</a>
+                        </p>
+                    </div>
+                    <div class="angebot-box mb-5">
+                        <img src="icons/preis_rotbraun.png" class="img-fluid mb-3" alt="Icon des Euro Symbols">
+                        <p>Kursgebühr inkl. Material <span class="fw-semibold">EUR 110,–</span><br>
+                        Vollpension <span class="fw-semibold">EUR 85,–</span></p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a class="btn btn-primary btn-lg mt-5 mobil" href="anmeldung.html">Anmeldung</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/ton.jpg" class="full-width mb-5 img-fluid abstand" alt="Zwei Hände formen ein Gefäß aus Ton">
+                    <h3 class="angebot_h3 ks-kastanie mb-3">Arbeiten mit Ton</h3>
+                    <p>Formen Sie den Werkstoff Ton zu einem persönlichen
+                        Einzelstück. Erleben Sie, was in
+                        Ihren Händen steckt – und erden Sie sich im
+                        wahrsten Sinn des Wortes.</p>
+                    <div class="angebot-box mt-5">
+                        <img src="icons/kalender_rotbraun.png" class="img-fluid mb-3" alt="Icon eines Kalenders">
+                        <p>Samstag, <span class="fw-semibold">5. Februar</span><br>
+                            bis Sonntag, <span class="fw-semibold">Sonntag, 6. Februar 2022</span></p>
+                        <p>Samstag, <span class="fw-semibold">4. Juni</span><br>
+                            bis Sonntag, <span class="fw-semibold">5. Juni 2022</span></p>
+                    </div>
+                    <div class="angebot-box">
+                        <img src="icons/kursleiter_rotbraun.png" class="img-fluid mb-3" alt="Icon einer Person">
+                        <p><span class="fw-semibold">Kursleiterin: Hiltrud Kleinst</span><br>
+                            <a href="mailto:hiltrud.kleinst@gmail.de">hiltrud.kleinst@gmail.de</a>
+                        </p>
+                    </div>
+                    <div class="angebot-box mb-5">
+                        <img src="icons/preis_rotbraun.png" class="img-fluid mb-3" alt="Icon des Euro Symbols">
+                        <p>Kursgebühr <span class="fw-semibold">EUR 90,–</span></p>
+                        <p>Materialkosten je nach Bedarf<br>
+                        Vollpension <span class="fw-semibold">EUR 85,–</span></p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a class="btn btn-primary btn-lg mt-5 mb-5 mobil" href="anmeldung.html">Anmeldung</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Stille -->
+        <section id="stille">
+            <div class="container">
+                <div class="headline-box text-center">
+                    <h2 class="ks-rotbraun angebot_h2">Angebot<br>
+                        <span class="ks-kastanie">Stille</span>
+                    </h2>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-md-5">
+                        <img src="img/schweigeseminar.jpg" class="full-width mb-5 img-fluid" alt="Innenansicht des Klosters">
+                        <h3 class="angebot_h3 ks-violett mb-3">Schweigeseminar</h3>
+                        <p>So können Sie richtig Atem holen: Sie gestalten
+                            Ihren Tag im Kloster in Schweigen, das
+                            nur zu den Mahlzeiten unterbrochen wird.
+                            Unterstützend bieten wir Atem- und Entspannungsübungen
+                            an oder laden Sie zur
+                            Meditation ein. Wir bieten wahlweise einen
+                            oder drei Schweigetag/e an.</p>
+                        <div class="angebot-box mt-5">
+                            <img src="icons/kalender_violett.png" class="img-fluid mb-3" alt="Icon eines Kalenders">
+                            <p>Donnerstag, <span class="fw-semibold">13. Januar</span><br>
+                                bis Samstag, <span class="fw-semibold">15. Januar 2022</span></p>
+                            <p>Donnerstag, <span class="fw-semibold">7. April</span><br>
+                                bis Samstag, <span class="fw-semibold">9. April 2022</span></p>
+                        </div>
+                        <div class="angebot-box mb-5">
+                            <img src="icons/preis_violett.png" class="img-fluid mb-3" alt="Icon des Euro Symbols">
+                            <p>Gebühr <span class="fw-semibold">EUR 60,–</span><br>
+                            Vollpension <span class="fw-semibold">EUR 120,–</span></p>
+                        </div>
+                        <div class="text-center mb-5">
+                            <a class="btn btn-primary btn-lg mt-5 mobil" href="anmeldung.html">Anmeldung</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="text-center mb-5">
+                    <a class="btn btn-primary btn-lg mt-5 tablet" href="anmeldung.html">Anmeldung</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footerbereich -->
+        <div class="wald">
+            <img class="img-fluid" src="img/wald.png"
+                alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+        </div>
+        <footer class="text-center">
+            <div class="container text-light">
+                <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+                <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                    Fax: 0751-123459<br>
+                    <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+                </p>
+                <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                    <a href="#">Datenschutz</a>
+                </p>
+            </div>
+
+        </footer>
+
+
+        <!-- JavaScript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/offcanvas.js"></script>
+        <script src="js/custom.js"></script>
+
+</body>
+
+</html>

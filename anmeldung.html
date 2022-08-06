@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="Go to top">hoch</button>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="hero anmeldung-hero">
+        <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+        <div class="verlauf">&nbsp;</div>
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Formularfelder -->
+    <section id="kontakt">
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="headline ks-violett mb-5">Anmeldung</h1>
+            </div>
+            <div class="mt-large flex justify-content-center mb-5">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <div class="border-verlauf-select">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Hatha-Yoga</option>
+                                <option value="1">Körperarbeit</option>
+                                <option value="2">Zeichnen</option>
+                                <option value="3">Töpfern</option>
+                                <option value="4">Stille</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="radioButton1" id="radio1">
+                            <label class="form-check-label" for="radio1">
+                                Freitag, 4. Februar bis Sonntag,<br>
+                                6. Februar 2022
+                            </label>
+                        </div>
+                        <div class="form-check mb-5">
+                            <input class="form-check-input" type="radio" name="radioButton2" id="radio2">
+                            <label class="form-check-label" for="radio2">
+                                Freitag, 3. Juni bis Sonntag,<br>
+                                5. Juni 2022
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <p>Zum Preis von <span class="fw-semibold">205,– €</span><br>
+                                (d. h. Kursgebühr 85,– €, Vollpension 120,– €)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center">
+                <h2 class="subheadline ks-violett mb-4">Ich buche dieses Seminar:</h2>
+            </div>
+
+            <form class="row g-3 mt-medium">
+                <div class="col-md-6 col-links">
+                    <label for="inputVorname" class="form-label">Vorname*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputVorname" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-rechts">
+                    <label for="inputNachname" class="form-label">Nachname*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputNachname" required>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-4">
+                    <label for="inputStrasse" class="form-label">Straße*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputStrasse" required>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2 col-links">
+                    <label for="inputHausnr" class="form-label">Hausnr*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputHausnr" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-rechts">
+                    <label for="inputPLZ" class="form-label">PLZ*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputPLZ" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-links">
+                    <label for="inputOrt" class="form-label">Ort*</label>
+                    <div class="border-verlauf">
+                        <input type="text" class="form-control" id="inputOrt" required>
+                    </div>
+                </div>
+                <div class="col-md-6 col-rechts mb-4">
+                    <label for="inputEmail4" class="form-label">Email*</label>
+                    <div class="border-verlauf">
+                        <input type="email" class="form-control" id="inputEmail4" required>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-medium">
+                    <div class="col-md-5">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1" required>
+                            <label class="form-check-label" for="gridCheck1">
+                                Ich bin mit den AGB einverstanden.*
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="gridCheck2" required>
+                            <label class="form-check-label" for="gridCheck2">
+                                Einwilligung zur Datenverarbeitung
+                                gemäß DSGVO*
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <!-- <div class="border-verlauf-check"> -->
+                            <input class="form-check-input" type="checkbox" id="gridCheck3">
+                            <label class="form-check-label" for="gridCheck3">
+                                Ich melde mich zum Newsletter an.
+                            </label>
+                            <!-- </div> -->
+                        </div>
+                        <p class="kursiv mb-5">(*Pflichtfelder)</p>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Abschicken</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footerbereich -->
+    <div class="wald">
+        <img class="img-fluid mt-5" src="img/wald.png"
+            alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+    </div>
+    <footer class="text-center">
+        <div class="container text-light">
+            <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+            <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                Fax: 0751-123459<br>
+                <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+            </p>
+            <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                <a href="#">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

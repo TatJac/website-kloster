@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="nach oben">hoch</button>
+
+    <!-- Pop-Up -->
+    <div class="popup">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-popup" data-bs-toggle="modal" data-bs-target="#modal-popup">
+            &nbsp;
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-popup" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+                        <p class="fw-semibold">Atemholen in der Pandemie - <br>
+                            Wir sind für Sie da!</p>
+                        <p>Das Seminarhaus Kloster Schwarzenfels ist weiter <span class="fw-semibold">geöffnet</span>
+                        </p>
+                        <p>Achten Sie auf unsere speziellen Bedingungen.</p>
+                        <p>Wir freuen uns auf Sie - gerade jetzt.</p>
+                        <p class="fw-semibold">Bleiben Sie gesund.</p>
+                    </div>
+                    <div class="modal-header">
+                        <button type="button" class="btn-close text" data-bs-dismiss="modal"
+                            aria-label="Close">schließen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="start">
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="naviOben">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Text + Logo -->
+        <div id="hero">
+            <div class="container">
+                <h2 id="sub_start">Durchatmen - entspannen - nachdenken</h2>
+                <h1 id="main_start"><span>Seminarhaus Kloster</span><br>
+                    Schwarzenfels</h1>
+                <img id="logo" src="img/logo.png" alt="Logo des Klosters Schwarzenfels">
+            </div>
+        </div>
+    </div>
+
+    <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+    <div class="verlauf">&nbsp;</div>
+
+    <!-- Pfeil zum schnellen Runterscrollen zum Inhalt -->
+    <div class="arrow_down">
+        <a href="#anfang"><img src="icons/arrow_down.png" alt="Grafik eines Pfeils, der nach unten zeigt"></a>
+        <p>Mehr</p>
+    </div>
+
+    <!-- Erser Abschnitt -->
+    <div id="anfang">
+        <div class="container text-center mt-5">
+            <p>Nun ist es so weit: Nach den guten Erfahrungen im Probebetrieb starten wir im Jahr 2022 mit den
+                ersten regelmäßigen Kursen zu Gesundheit, Kreativität und Stille.</p>
+            <p class="fw-semibold">Unser Motto:<br>
+                „Auszeit-in-Schwarzenfels“.</p>
+            <p>Wer Erholung, Entspannung und Abstand vom Alltag sucht, ist uns herzlich willkommen.</p>
+            <p>Wir hoffen, Sie bald auf dem Klosterareal mit seinem modernen Seminarhaus als Gäste begrüßen zu
+                dürfen – ganz unabhängig davon, welchen Glauben oder welche Weltanschauung Sie haben. Denn
+                Gastfreundschaft ist
+                seit Jahrhunderten ein Merkmal des Klosterlebens.</p>
+            <a class="btn btn-primary btn-lg mt-5" href="anmeldung.html">Anmeldung</a>
+        </div>
+    </div>
+
+    <!-- Verlinkungen zu anderen Seiten -->
+    <div class="container seitenverweise">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class=" kasten">
+                    <a href="angebot.html"><img src="img/angebot.jpg" class="img-fluid mt-4"
+                            alt="Eine Person bearbeitet einen Klumpen Ton mit ihren Händen und einem Holzstäbchen"></a>
+                    <a href="angebot.html" class="kastentext">Angebot</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class=" kasten">
+                    <a href="ausfluege.html"><img src="img/ausfluege.jpg" class="img-fluid mt-4"
+                            alt="Ein älteres Paar geht lächelnd und händchenhaltend in der Natur spazieren"></a>
+                    <a href="ausfluege.html" class="kastentext">Ausflüge</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class=" kasten">
+                    <a href="preisuebersicht.html"><img src="img/preisuebersicht.jpg" class="img-fluid mt-4"
+                            alt="Auf einem Tisch liegt ein geöffnetes Buch mit einem Stift. Im Hintergrund stehen eine Topfpflanze, eine Kaffeetasse und ein Stuhl"></a>
+                    <a href="preisuebersicht.html" class="kastentext">Preisübersicht</a>
+                </div>
+            </div>
+            <div class="col-md-5 mb-5">
+                <div class=" kasten">
+                    <a href="stimmen.html"><img src="img/stimmen.jpg" class="img-fluid mt-4"
+                            alt="Ein junger Mann steht an einem Holzzaun in der Natur und schaut verträumt Richtung Himmel"></a>
+                    <a href="stimmen.html" class="kastentext">Stimmen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footerbereich -->
+        <div class="wald">
+            <img class="img-fluid mt-5" src="img/wald.png"
+                alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+        </div>
+        <footer class="text-center">
+            <div class="container text-light">
+                <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+                <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                    Fax: 0751-123459<br>
+                    <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+                </p>
+                <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                    <a href="#">Datenschutz</a>
+                </p>
+            </div>
+        </footer>
+
+
+        <!-- JavaScript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/offcanvas.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/modal.js"></script>
+</body>
+
+</html>

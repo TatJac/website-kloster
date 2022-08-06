@@ -1,0 +1,749 @@
+/* --- Schriften --- */
+
+    /* source-serif-pro-regular - latin */
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+            url('../fonts/source-serif-pro-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-serif-pro-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* source-serif-pro-600 - latin */
+    @font-face {
+        font-family: 'Source Serif Pro';
+        font-style: normal;
+        font-weight: 600;
+        src: local(''),
+            url('../fonts/source-serif-pro-v11-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-serif-pro-v11-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* source-sans-pro-regular - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+            url('../fonts/source-sans-pro-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-sans-pro-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* source-sans-pro-300italic - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: italic;
+        font-weight: 300;
+        src: local(''),
+            url('../fonts/source-sans-pro-v19-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-sans-pro-v19-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* source-sans-pro-300 - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        src: local(''),
+            url('../fonts/source-sans-pro-v19-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-sans-pro-v19-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* source-sans-pro-600 - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        src: local(''),
+            url('../fonts/source-sans-pro-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-sans-pro-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* source-sans-pro-700 - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),
+            url('../fonts/source-sans-pro-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../fonts/source-sans-pro-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+/* --- Farbpalette --- */
+
+    :root {
+        --ks-braun: #8D654C;
+        --ks-rotbraun: #895857;
+        --ks-kastanie: #7A5163;
+        --ks-violett: #614F68;
+        --ks-blau: #454C65;
+    }
+
+    .ks-braun {
+        color: var(--ks-braun);
+    }
+    .ks-rotbraun {
+        color: var(--ks-rotbraun);
+    }
+    .ks-kastanie {
+        color: var(--ks-kastanie);
+    }
+    .ks-violett {
+        color: var(--ks-violett);
+    }
+    .ks-blau {
+        color: var(--ks-blau);
+    }
+
+/* --- Typografie --- */
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        color: #606060;
+        font-size: min(3.6vw, 1.3em);
+        filter: none;
+        padding-right: 0 !important;
+    }
+    body p {
+        line-height: 140%;
+    }
+
+    a {
+        color: var(--ks-blau);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: from-font;
+    }
+
+    .fw-semibold {
+        font-weight: 600;
+    }
+
+    .kursiv {
+        font-style: italic;
+    }
+
+    h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    h1 {font-family: 'Source Serif Pro', serif;}
+
+    h3 {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        font-size: 1.17em;
+    }
+
+    .angebot_h1 {
+        font-weight: 600;
+        margin-bottom: -0.4rem;
+        font-size: 1.95em;
+    }
+    .angebot_h2 {
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-size: 1.95em;
+    }
+    .angebot_h3 {
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .headline {
+        font-weight: 600;
+        font-size: 1.95em;
+    }
+    .subheadline {
+        font-weight: 600;
+        font-size: 1.95em;
+        font-size: 1.07em;
+    }
+
+    h1#main_start {
+        color: white;
+        font-weight: 600;
+        margin-top: 3rem;
+        font-size: 2.65em;
+    }
+
+    h1#main_start span {
+        font-weight: 400;
+        font-size: 0.68em;
+    }
+
+    h2#sub_start {
+        color: white;
+        font-weight: 300;
+        font-size: 1.4em;
+        font-style: italic;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+/* --- Elemente --- */
+
+    .btn-primary {
+        color: #fff;
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        background: linear-gradient(90deg, rgba(141,101,76,1) 0%, rgba(137,88,87,1) 25%, rgba(122,81,99,1) 50%, rgba(97,79,104,1) 75%, rgba(69,76,101,1) 100%);
+        border: none;
+        padding: 1rem 3.5rem;
+        font-size: min(4.9vw, 1.9rem);
+        border-radius: 10px;
+    }
+
+/* --- Allgemeines --- */
+
+    .headline-box {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .mobil {
+        display: inline-block;
+    }
+
+    .hero {
+        height: 50vh;
+        position: relative;
+    }
+    .border-verlauf {
+        border-radius:12px;
+        border:3px solid transparent;
+        background:linear-gradient(90deg, rgba(141,101,76,1) 0%, rgba(137,88,87,1) 25%, rgba(122,81,99,1) 50%, rgba(97,79,104,1) 75%, rgba(69,76,101,1) 100%) border-box;
+    }
+    .border-verlauf-select {
+        border-radius:12px;
+        border:3px solid transparent;
+        background:linear-gradient(90deg, rgba(141,101,76,1) 0%, rgba(137,88,87,1) 25%, rgba(122,81,99,1) 50%, rgba(97,79,104,1) 75%, rgba(69,76,101,1) 100%) border-box;
+    }
+    .border-verlauf-check {
+        border-radius:12px;
+        border:3px solid transparent;
+        background:linear-gradient(90deg, rgba(141,101,76,1) 0%, rgba(137,88,87,1) 25%, rgba(122,81,99,1) 50%, rgba(97,79,104,1) 75%, rgba(69,76,101,1) 100%) border-box;
+    }
+    .flex {
+        display: flex;
+    }
+    .mt-medium {
+        margin-top: 3rem;
+    }
+    .mt-large {
+        margin-top: 4.5rem;
+    }
+
+/* --- Navigation --- */
+
+    .navbar-nav {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .nav_icons {
+        font-size: 18px !important;
+    }
+
+    .icons {
+        display: inline-block;
+        text-align: center;
+        margin-right: 2rem;
+    }
+    .icons:hover {
+        cursor: pointer;
+    }
+    button#navbarSideCollapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons p, 
+    button#navbarSideCollapse span {
+        color: white;
+        font-weight: normal;
+        font-size: min(3vw, 1.1rem);
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("../icons/burger.png");
+    }
+
+    li.nav-item {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #ffffff52;
+        width: 70%;
+    }
+    li.nav-item:last-of-type {
+        border-bottom: none;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+        font-weight: 600;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255,255,255,.9);
+    }
+    #navi {
+        transition: 0.3s ease-in-out;
+        padding-right: 0 !important;
+    }
+    #navi.scrolled {
+        background-color: #454c65f7;
+        }
+    #navi .container {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+/* --- Startseite --- */
+
+    .start {
+        background-image: linear-gradient(48deg, rgba(69,76,101,0.9) 0%, rgba(97,79,104,0.9) 25%, rgba(122,81,99,0.9) 60%, rgba(137,88,87,0.9) 80%, rgba(141,101,76,0.9) 100%),
+        url(../img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .verlauf {
+        height:15vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 9%, rgba(255,255,255,0.7) 19%, rgba(255,255,255,0.5) 30%, rgba(255,255,255,0.3) 43%, rgba(255,255,255,0.25) 49%, rgba(255,255,255,0.2) 56%, rgba(255,255,255,0.15) 65%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.05) 87%, rgba(255,255,255,0) 100%);
+    }
+
+    #hero {
+        position: relative;
+        height: 100vh;
+    }
+
+    #hero .container {
+        position: absolute;
+        top: 28%;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #logo {
+        width: 15vh;
+        margin-top: 2rem;
+    }
+
+    .arrow_down {
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .arrow_down p {
+        color: white;
+        font-size: min(3.2vw, 1.3rem);
+        margin-top: 0.2rem;
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+    
+    .arrow_down img {height: 2rem;
+        animation: pfeil 2s infinite  alternate; /* Die Animation heißt pfeil, geht 2s, läuft unendlich lange und dreht die Animation nach Ende quasi um (erst vorwärts, dann rückwärts)*/
+    }
+    
+    @keyframes pfeil {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }}
+
+    #anfang {
+        padding-top: 6rem;
+        margin-top: -6rem;
+    }
+   
+    .seitenverweise {
+        margin-top: 9rem;
+    }
+
+    .kasten {
+        position: relative;
+    }
+    
+    .kastentext {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        font-family: 'Source Serif Pro';
+        color: white;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+
+/* --- Seite Angebot --- */
+
+    .angebot-hero {
+        background: linear-gradient(0deg, rgba(141,101,76,0.8), rgba(141,101,76,0.8)), url("../img/angebot_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+    .angebot-box {
+        margin-top: 2rem;
+    }
+
+/* --- Seite Preisübersicht --- */
+
+    .preis-hero {
+        background: linear-gradient(0deg, rgba(122,81,99,0.8), rgba(122,81,99,0.8)), url("../img/preisuebersicht_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+    .table>thead {
+        vertical-align: bottom;
+        background: var(--ks-kastanie);
+        color: white;
+    }
+
+    .table>:not(caption)>*>* {
+        padding: 1rem 3rem;
+        background-color: var(--bs-table-bg);
+        border-bottom-width: 1px;
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }
+
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        --bs-table-accent-bg: rgba(122,81,99,0.2);
+        color: var(--bs-table-striped-color);
+    }
+
+    .table>:not(caption)>*>* {
+        border-bottom-width: 0;
+    }
+
+    tr {
+        vertical-align: middle;
+    }
+
+    th {
+        font-weight: 600;
+        border-right: 1px solid white;
+    }
+    td {
+        border-right: 1px solid #B7B7B7;
+    }
+    td:last-of-type {
+        border: none;
+    }
+
+    .table>:not(:first-child) {
+        border-top: none;
+    }
+
+/* --- Seite Stimmen --- */
+
+    .stimmen-hero {
+        background: linear-gradient(0deg, rgba(97,79,104,0.8), rgba(97,79,104,0.8)), url("../img/stimmen_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+/* --- Seite Ausflüge --- */
+
+    .ausfluege-hero {
+        background: linear-gradient(0deg, rgba(137,88,87,0.8), rgba(137,88,87,0.8)), url("../img/ausfluege_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+
+/* --- Seite Kontakt/Impressum --- */
+
+    .kontakt-hero {
+        background: linear-gradient(0deg, rgba(69,76,101,0.8), rgba(69,76,101,0.8)), url("../img/kontakt_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+
+/* --- Seite Anmeldung --- */
+
+    .anmeldung-hero {
+        background: linear-gradient(0deg, rgba(97,79,104,0.8), rgba(97,79,104,0.8)), url("../img/anmeldung_hero.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+
+
+/* --- Footer --- */
+
+    .wald {
+        margin-top: 4rem;
+    }
+
+    footer {
+        background-color: var(--ks-blau);
+        padding-bottom: 6.5rem;
+    }
+
+
+/* --- back-to-top-button ---*/
+
+    .back-to-top {
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        border-radius: 100%;
+        padding: 0.5rem;
+        border: none;
+        cursor: pointer;
+        opacity: 100%;
+        transition: opacity 0.5s;
+        z-index: 2;
+        color: white;
+        font-size: min(3vw, 1.2rem);
+        height: 80px;
+        width: 80px;
+        background: url("../icons/top_button.png"), var(--ks-kastanie);
+        background-repeat: no-repeat;
+        background-position: center 25%;
+        padding-top: 2.5rem;
+    }
+
+    .hidden {
+        opacity: 0%;
+    }
+
+/* --- Pop-Up --- */
+
+    .modal {
+        z-index: 2;
+    }
+
+    .modal-header {
+        border: none;
+        padding-top: 0;
+    }
+
+    .modal-content {
+        width: 30rem;
+        background-color: var(--ks-blau);
+        border: none;
+        border-radius: 50%;
+        outline: 0;
+        height: 30rem;
+        margin: 0 auto;
+    }
+    .modal-body {
+        padding: 6rem 1rem 1rem;
+    }
+
+    .modal-body p {
+        color: white;
+    }
+
+    .modal-backdrop {
+        z-index: 1;
+    }
+
+    .popup {
+        z-index: 2;
+    }
+
+    .btn-popup {
+        position: fixed;
+        left: 5%;
+        bottom: 0%;
+        z-index: 1;
+        background: url(../icons/info.png), var(--ks-blau);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px 12px 0 0;
+        padding: 0;
+        width: 60px;
+        height: 55px;
+    }
+
+    .btn-popup:active, 
+    .btn-popup:focus,
+    .btn-popup:hover {
+        background-color: var(--ks-blau);
+        box-shadow: none!important;
+    }
+
+    .modal-header .btn-close {
+        padding: 0.5rem 0.5rem;
+        margin: 0 auto;
+    }
+
+    .btn-close {
+        box-sizing: content-box;
+        width: 100%;
+        height: 4.5em;
+        padding: 0.25em 0.25em;
+        background: transparent url("../icons/x.png") center top/1.3em auto no-repeat;
+        border: 0;
+        border-radius: 0.25rem;
+        opacity: 1;
+        color: white;
+        font-size: min(3vw, 1.2rem);
+    }
+    .btn-close:hover {
+        color: #a3a3a3;
+    }
+    .btn-close:focus {
+        box-shadow: none;
+    }
+
+/* --- Formular --- */
+
+    .form-select {
+        width: 100%;
+        padding: 0.7rem 2.25rem 0.7rem 1rem;
+        font-size: 1em;
+        border: none;
+        border-radius: 9px;
+    }
+
+    .form-label {
+        font-weight: 400;
+    }
+
+    .form-control {
+        padding: 0.7rem 0.75rem;
+        font-size: 1em;
+        font-weight: 400;
+        color: #212529;
+        border: none;
+        border-radius: 9px;
+    }
+    .form-check {
+        min-height: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .form-check-input {
+        background: url(../icons/checkbox.svg);
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+    }
+    .form-check-input:checked {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .form-check-input:focus {
+        border: none;
+        box-shadow: none;
+    }
+    .form-check-input:checked[type=checkbox] {
+        background-image: url("../icons/checkbox-checked.svg");
+    }
+    .form-check-input:active {
+        filter: none;
+    }
+    .form-check-input:focus {
+        box-shadow: none;
+    }
+    .form-check-label {
+        padding-left: 0.9rem;
+    }
+
+    .form-check-input[type=radio] {
+        background: url(../icons/radio.svg);
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+    }
+    .form-check-input:checked[type=radio] {
+        background-image: url("../icons/radio-checked.svg");
+    }
+    .form-select {
+        background-image: url(../icons/dropdown.svg);
+        background-position: right center;
+        background-size: auto;
+    }
+    .form-select:focus {
+        box-shadow: none;
+    }
+
+    
+
+
+/* --- Media Queries --- */
+
+    @media (max-width: 576px) {
+        .container, .container-sm {
+            max-width: 500px;
+        }
+        .container.seitenverweise {
+            max-width: 100%;
+            padding: 0;
+        }
+        .full-width {
+            left: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            max-width: 100vw;
+            position: relative;
+            right: 50%;
+            width: 100vw;
+        }
+        .abstand {
+            margin-top: 6rem;
+        }
+        .tabelle {
+            max-width: 100%;
+            padding: 0;
+        }
+        .border-verlauf-select {
+            width: 100%;
+        }
+    }
+    @media (min-width:768px) {
+        .seitenverweise img {
+            border-radius: 12px;
+        }
+        .hero {
+            height: 70vh;
+        }
+        .tablet {
+            display: inline-block;
+        }
+        .mobil {
+            display: none;
+        }
+        .headline-box {
+            margin-top: 3rem;
+            margin-bottom: 3.5rem;
+        }
+        .wald {
+            margin-top: 6rem;
+        }
+        .abstand-tablet {
+            margin-top: 6rem;
+        }
+        .text-center-tablet {
+            text-align: center;
+        }
+        .col-rechts {
+            padding-left: 3rem;
+        }
+        .col-links {
+            padding-right: 3rem;
+        }
+
+    }

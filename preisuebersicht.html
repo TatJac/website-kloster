@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="Go to top">hoch</button>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="hero preis-hero">
+        <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+        <div class="verlauf">&nbsp;</div>
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Tabelle -->
+    <section id="kontakt">
+        <div class="container text-center mt-5 tabelle">
+            <h1 class="headline ks-kastanie mb-5">Preisübersicht</h1>
+            <h2 class="subheadline ks-kastanie mb-4">Programm- und Preisübersicht<br>
+                1. Halbjahr 2022</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Kursname</th>
+                      <th scope="col">Dozent-/in</th>
+                      <th scope="col">Datum</th>
+                      <th scope="col">Kursgebühr</th>
+                      <th scope="col">Vollpension</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Hatha-Yoga</td>
+                      <td>Annegret Schippke</td>
+                      <td>4.–6.2.22</td>
+                      <td>EUR 85,–</td>
+                      <td>EUR 120,–</td>
+                    </tr>
+                    <tr>
+                      <td>Hatha-Yoga</td>
+                      <td>Annegret Schippke</td>
+                      <td>3.–5.6.22</td>
+                      <td>EUR 85,–</td>
+                      <td>EUR 120,–</td>
+                    </tr>
+                    <tr>
+                      <td>Körperarbeit</td>
+                      <td>Steffen Nagel</td>
+                      <td>11.–13.2.22</td>
+                      <td>EUR 95,–</td>
+                      <td>EUR 120,–</td>
+                    </tr>
+                    <tr>
+                        <td>Körperarbeit</td>
+                        <td>Steffen Nagel</td>
+                        <td>6.–8.5.22.</td>
+                        <td>EUR 95,–</td>
+                        <td>EUR 120,–</td>
+                      </tr>
+                      <tr>
+                        <td>Zeichnen</td>
+                        <td>Hanne Harch</td>
+                        <td>23.–24.4.22</td>
+                        <td>EUR 110,–</td>
+                        <td>EUR 85,–</td>
+                      </tr>
+                      <tr>
+                        <td>Zeichnen</td>
+                        <td>Hanne Harch</td>
+                        <td>21.–22.5.22</td>
+                        <td>EUR 110,–</td>
+                        <td>EUR 85,–</td>
+                      </tr>
+                      <tr>
+                        <td>Töpfern</td>
+                        <td>Hiltrud Kleinst</td>
+                        <td>5.–6.2.22</td>
+                        <td>EUR 90,–</td>
+                        <td>EUR 85,–</td>
+                      </tr>
+                      <tr>
+                        <td>Töpfern</td>
+                        <td>Hiltrud Kleinst</td>
+                        <td>4.–5.6.22</td>
+                        <td>EUR 90,–</td>
+                        <td>EUR 85,–</td>
+                      </tr>
+                      <tr>
+                        <td>Stille</td>
+                        <td>–</td>
+                        <td>13.–15.1.22</td>
+                        <td>EUR 60,–</td>
+                        <td>EUR 120,–</td>
+                      </tr>
+                      <tr>
+                        <td>Stille</td>
+                        <td>–</td>
+                        <td>7.–9.4.22</td>
+                        <td>EUR 60,–</td>
+                        <td>EUR 120,–</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </section>
+
+    <!-- Footerbereich -->
+    <div class="wald">
+        <img class="img-fluid mt-5" src="img/wald.png"
+            alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+    </div>
+    <footer class="text-center">
+        <div class="container text-light">
+            <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+            <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                Fax: 0751-123459<br>
+                <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+            </p>
+            <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                <a href="#">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

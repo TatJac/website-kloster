@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+
+    <title>Kloster Schwarzenfels</title>
+</head>
+
+<body>
+    <!-- Back-to-top-button -->
+    <button onclick="backToTop()" class="back-to-top hidden" title="Go to top">hoch</button>
+
+    <!-- Anfang der Startseite + Offcanvas-Navigation -->
+    <div class="hero ausfluege-hero">
+        <!-- Weißer Verlauf am unteren Bildrand für Fade-Out-Effekt -->
+        <div class="verlauf">&nbsp;</div>
+        <nav id="navi" class="navbar fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav_icons">
+                    <div class="icons" onclick="filterFunction()">
+                        <img src="icons/farbwechsel.png" alt="Grafik eines Auges, das durch einen diagonalen Strich von links oben nach rechts unten geteilt wird. Die Linke Seite des Auges ist farbig,
+                            die rechte Seite weiß.">
+                        <p>Farbe/Grau</p>
+                    </div>
+                    <div id="groesser" class="icons">
+                        <img src="icons/schrift_groesser.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Pluszeichen neben der Lupe">
+                        <p>Schrift größer</p>
+                    </div>
+                    <div id="kleiner" class="icons">
+                        <img src="icons/schrift_kleiner.png"
+                            alt="Grafik einer Lupe mit mit dem Buchstaben A im Inneren und einem Minuszeichen neben der Lupe">
+                        <p>Schrift kleiner</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span>Menü</span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="angebot.html">Angebot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anmeldung.html">Anmeldung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preisuebersicht.html">Preisübersicht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stimmen.html">Stimmen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ausfluege.html">Ausflüge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt/Impressum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Zitate -->
+    <section id="kontakt">
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="headline ks-rotbraun mb-5">Ausflüge</h1>
+                <h2 class="subheadline ks-rotbraun mb-4">Passende Etappen auf dem Oberschwäbischen Pilgerweg:</h2>
+            </div>
+            <div class="text-center-tablet mt-5">
+                <p>Der Oberschwäbische Pilgerweg verbindet herrlich gelegene Wallfahrtsorte und lässt sich in vielen
+                    verschiedenen Etappen bewältigen. Diese drei Touren sind als Rundwege angelegt.</p>
+                <p>Die folgende Auflistung zeigt Ihnen alle sehenswerte Orte auf diesen drei Touren zwischen Lauchert
+                    und
+                    Bad Waldsee. Die letzte Etappe berührt das Kloster Schwarzenfels bei Ravensburg.</p>
+            </div>
+            <div class="row justify-content-around abstand-tablet mt-4">
+                <div class="col-md-5 mb-5">
+                    <h3 class="ks-rotbraun mt-4">1. Etappe</h3>
+                    <img class="mb-3" src="icons/route_rotbraun.png" alt="Grafik eines Wegweisers">
+                    <p>Zwischen Lauchert und Bodensee<br>
+                        <span class="fw-semibold">153 Kilometer</span></p>
+                    <p>über die Stationen Mengen, Scheer, Veringenstadt, Sigmaringen, Inzigkofen, Beuron, Engelswies,
+                        Meßkirch, Heiligenberg, Pfullendorf, Ostrach und Mengen</p>
+                    <img class="mt-4 mb-3" src="icons/bett_rotbraun.png" alt="Grafik eines Bettes">
+                    <p>Mit Übernachtungen in Sigmaringen und Heiligenberg</p>
+                </div>
+                <div class="col-md-5 mb-5">
+                    <h3 class="ks-kastanie mt-4">2. Etappe</h3>
+                    <img class="mb-3" src="icons/route_kastanie.png" alt="Grafik eines Wegweisers">
+                    <p>Zwischen Linzgau und Schussen<br>
+                        <span class="fw-semibold">126 Kilometer</span></p>
+                    <p>über die Stationen Aulendorf, Altshausen,
+                        Bad Saulgau, Hohentengen, Ostrach, Königseggwald,
+                        Horgenzell, Berg, Fronreute,
+                        Wolpertswende, Bad Waldsee, Aulendorf</p>
+                    <img class="mt-4 mb-3" src="icons/bett_kastanie.png" alt="Grafik eines Bettes">
+                    <p>Mit Übernachtungen in Ostrach und Bad
+                        Waldsee</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-around abstand-tablet mt-4 text-center-tablet">
+                <div class="col-md-5 mb-5">
+                    <h3 class="ks-violett mt-4">3. Etappe</h3>
+                    <img class="mb-3" src="icons/route_violett.png" alt="Grafik eines Wegweisers">
+                    <p>Zwischen Schussen und Allgäu<br>
+                        <span class="fw-semibold">200 Kilometer</span></p>
+                    <p>über die Stationen Bald Waldsee, Bad
+                        Schussenried, Weingarten, Ravensburg,
+                        Schloss Zeil, Bad Wurzach, Bergatreute, Bad
+                        Waldsee</p>
+                    <img class="mt-4 mb-3" src="icons/bett_violett.png" alt="Grafik eines Wegweisers">
+                    <p>Mit Übernachtungen in Ravensburg, Bad
+                        Wurzach und Bad Waldsee</p>
+                </div>
+            </div>
+            <p class="text-center-tablet">Wer alle drei Etappen bewältigen will, lässt
+                sich auf 480 Kilometer Wegstrecke ein. Ob
+                sie zu Fuß oder per Rad gemacht wird,
+                hängt ganz von Lust und Laune ab. Ebenso
+                einladend sind Ausflüge auf einzelnen Teilstrecken.
+                Wir beraten Sie gerne.</p>
+        </div>
+    </section>
+
+    <!-- Footerbereich -->
+    <div class="wald">
+        <img class="img-fluid mt-5" src="img/wald.png"
+            alt="Eine blaue, im Flat-Design dargestellte Grafik einer Waldlandschaft">
+    </div>
+    <footer class="text-center">
+        <div class="container text-light">
+            <p class="fw-semibold">Seminarhaus Kloster Schwarzenfels</p>
+            <p>Tel: <a href="tel:0751123450">0751-123450</a><br>
+                Fax: 0751-123459<br>
+                <a href="mailto:info@auszeit-in-schwarzenfels.de">info@auszeit-in-schwarzenfels.de</a>
+            </p>
+            <p class="fw-semibold mt-5"><a href="kontakt.html">Kontakt/Impressum</a><br>
+                <a href="#">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
